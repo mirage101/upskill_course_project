@@ -1,5 +1,5 @@
 # Upskill course project
-Notify me when back in stock task
+Notify me when back in stock task<br>
 Description
 1. A button to subscribe for back in stock notification is displayed
 on PDP for out-of-stock products.
