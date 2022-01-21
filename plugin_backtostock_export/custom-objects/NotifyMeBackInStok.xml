@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-objects xmlns="http://www.demandware.com/xml/impex/customobject/2006-10-31">
+    <custom-object type-id="NotifyMeBackInStok" object-id="25697639M">
+        <object-attribute attribute-id="phoneNumbers">0887761274</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NotifyMeBackInStok" object-id="25752235M">
+        <object-attribute attribute-id="phoneNumbers">0887761274</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NotifyMeBackInStok" object-id="25752986M">
+        <object-attribute attribute-id="phoneNumbers">0887761274, 0888896976</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NotifyMeBackInStok" object-id="34736758M">
+        <object-attribute attribute-id="phoneNumbers">0887761274, 0888896976</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NotifyMeBackInStok" object-id="P0150M">
+        <object-attribute attribute-id="phoneNumbers">0887761274, 0888896976, 0887761271</object-attribute>
+    </custom-object>
+
+</custom-objects>

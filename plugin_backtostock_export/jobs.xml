@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    <job job-id="test" priority="0">
+        <description/>
+        <parameters/>
+        <flow>
+            <context site-id="Sites"/>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2021-12-16Z</date>
+                <time>00:33:00.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
+    <job job-id="notifyMeBackInStockJob" priority="0">
+        <description>Job which check if CO products have stock quantity and call a service to send SMS</description>
+        <parameters>
+            <parameter name="SiteScope"/>
+        </parameters>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="NotifyMeBackInStock" type="custom.NotifyMeBackInStock" enforce-restart="true">
+                <description>NotifyMeBackInStock job</description>
+                <parameters/>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-recurring enabled="true">
+                <recurrence>
+                    <date-from>2022-01-21Z</date-from>
+                    <start-time>03:58:27.000Z</start-time>
+                    <interval>12h</interval>
+                    <day-of-week/>
+                </recurrence>
+                <rules>
+                    <on-exit status="ERROR">
+                        <retry>
+                            <interval>1m</interval>
+                            <max-retries>1</max-retries>
+                        </retry>
+                    </on-exit>
+                </rules>
+            </run-recurring>
+        </triggers>
+    </job>
+    
+</jobs>

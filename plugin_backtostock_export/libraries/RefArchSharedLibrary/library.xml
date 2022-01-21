@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+    <folder folder-id="root">
+        <online-flag>true</online-flag>
+        <page-attributes>
+            <page-title xml:lang="x-default">RefArch Online Store</page-title>
+            <page-title xml:lang="fr-FR">Boutique en ligne RefArch</page-title>
+            <page-title xml:lang="it-IT">Negozio online RefArch</page-title>
+            <page-title xml:lang="ja-JP">RefArch オンラインストア</page-title>
+            <page-title xml:lang="zh-CN">RefArch 网上商店</page-title>
+            <page-description xml:lang="x-default">Online shopping with the leader in on-demand eCommerce solutions.</page-description>
+            <page-description xml:lang="fr-FR">Achat en ligne avec le leader des solutions e-commerce à la demande.</page-description>
+            <page-description xml:lang="it-IT">Shopping online con il leader delle soluzioni di e-commerce on-demand.</page-description>
+            <page-description xml:lang="ja-JP">オンデマンド eコマースソリューションの最先端プラットフォームでオンラインショッピング。</page-description>
+            <page-description xml:lang="zh-CN">通过按需电子商务 (On-Demand eCommerce) 解决方案的佼佼者来进行网上购物。</page-description>
+            <page-keywords xml:lang="x-default">new arrivals,mens,womens,electronics</page-keywords>
+            <page-keywords xml:lang="fr-FR">nouveautés,hommes,femmes,électronique</page-keywords>
+            <page-keywords xml:lang="it-IT">nuovi arrivi,uomo,donna,elettronica</page-keywords>
+            <page-keywords xml:lang="ja-JP">新着,メンズ,レディース,電子機器</page-keywords>
+            <page-keywords xml:lang="zh-CN">新品、男士、女士、电子</page-keywords>
+        </page-attributes>
+        <refinement-definitions>
+            <refinement-definition type="folder" bucket-type="none">
+                <display-name xml:lang="x-default">Folder</display-name>
+                <display-name xml:lang="fr-FR">Dossier</display-name>
+                <display-name xml:lang="it-IT">Cartella</display-name>
+                <display-name xml:lang="ja-JP">フォルダー</display-name>
+                <display-name xml:lang="zh-CN">文件夹</display-name>
+                <sort-mode>folder-position</sort-mode>
+                <cutoff-threshold>5</cutoff-threshold>
+            </refinement-definition>
+        </refinement-definitions>
+    </folder>
+
+    <folder folder-id="My Customer Service">
+        <display-name xml:lang="x-default">Customer Service</display-name>
+        <display-name xml:lang="fr-FR">Service client</display-name>
+        <display-name xml:lang="it-IT">Servizio clienti</display-name>
+        <display-name xml:lang="ja-JP">カスタマーサービス</display-name>
+        <display-name xml:lang="zh-CN">客户服务</display-name>
+        <description xml:lang="x-default">My Customer Service</description>
+        <description xml:lang="fr-FR">Mon service client</description>
+        <description xml:lang="it-IT">Servizio clienti</description>
+        <description xml:lang="ja-JP">マイカスタマーサービス</description>
+        <description xml:lang="zh-CN">我的客户服务</description>
+        <online-flag>false</online-flag>
+        <parent>root</parent>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="SearchBanner">
+        <display-name xml:lang="x-default">Search Banner</display-name>
+        <display-name xml:lang="fr-FR">Bannière de recherche</display-name>
+        <display-name xml:lang="it-IT">Banner di ricerca</display-name>
+        <display-name xml:lang="ja-JP">検索バナー</display-name>
+        <display-name xml:lang="zh-CN">搜索横幅</display-name>
+        <online-flag>true</online-flag>
+        <parent>root</parent>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="about-us">
+        <display-name xml:lang="x-default">About Salesforce</display-name>
+        <display-name xml:lang="fr-FR">À propos de Salesforce</display-name>
+        <display-name xml:lang="it-IT">Informazioni su Salesforce</display-name>
+        <display-name xml:lang="ja-JP">Salesforce について</display-name>
+        <display-name xml:lang="zh-CN">关于 Salesforce</display-name>
+        <online-flag>true</online-flag>
+        <template>rendering/folder/foldercontenthits</template>
+        <parent>root</parent>
+        <position>0.0</position>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="customCSSFile">css/aboutus.css</custom-attribute>
+        </custom-attributes>
+        <refinement-definitions>
+            <refinement-definition type="folder" bucket-type="none">
+                <display-name xml:lang="x-default">About Us</display-name>
+                <display-name xml:lang="fr-FR">À propos de nous</display-name>
+                <display-name xml:lang="it-IT">Chi siamo</display-name>
+                <display-name xml:lang="ja-JP">Salesforce について</display-name>
+                <display-name xml:lang="zh-CN">关于我们</display-name>
+                <sort-mode>folder-position</sort-mode>
+                <cutoff-threshold>5</cutoff-threshold>
+            </refinement-definition>
+        </refinement-definitions>
+        <content-listing-page-meta-tag-rules>
+            <page-meta-tag-rule rule-id="Content Folder Page Title Example"/>
+        </content-listing-page-meta-tag-rules>
+    </folder>
+
+    <folder folder-id="as-seen-in">
+        <display-name xml:lang="x-default">As Seen In</display-name>
+        <display-name xml:lang="fr-FR">Vu dans</display-name>
+        <display-name xml:lang="it-IT">Visto in</display-name>
+        <display-name xml:lang="ja-JP">メディア掲載情報</display-name>
+        <display-name xml:lang="zh-CN">请参见</display-name>
+        <online-flag>true</online-flag>
+        <parent>about-us</parent>
+        <position>3.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="contact-us-new">
+        <display-name xml:lang="x-default">Contact Us</display-name>
+        <display-name xml:lang="fr-FR">Contactez-nous</display-name>
+        <display-name xml:lang="it-IT">Contattaci</display-name>
+        <display-name xml:lang="ja-JP">お問い合わせ</display-name>
+        <display-name xml:lang="zh-CN">联系我们</display-name>
+        <online-flag>true</online-flag>
+        <parent>about-us</parent>
+        <position>4.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="employment">
+        <display-name xml:lang="x-default">Join Us</display-name>
+        <display-name xml:lang="fr-FR">Carrières</display-name>
+        <display-name xml:lang="it-IT">Lavora con noi</display-name>
+        <display-name xml:lang="ja-JP">採用情報</display-name>
+        <display-name xml:lang="zh-CN">加入我们</display-name>
+        <online-flag>true</online-flag>
+        <parent>about-us</parent>
+        <position>5.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="our-story">
+        <display-name xml:lang="x-default">Our Story</display-name>
+        <display-name xml:lang="fr-FR">Notre histoire</display-name>
+        <display-name xml:lang="it-IT">La nostra storia</display-name>
+        <display-name xml:lang="ja-JP">ストーリー</display-name>
+        <display-name xml:lang="zh-CN">我们的故事</display-name>
+        <online-flag>true</online-flag>
+        <parent>about-us</parent>
+        <position>0.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="our-team">
+        <display-name xml:lang="x-default">Our Team</display-name>
+        <display-name xml:lang="fr-FR">Notre équipe</display-name>
+        <display-name xml:lang="it-IT">Il nostro team</display-name>
+        <display-name xml:lang="ja-JP">チーム</display-name>
+        <display-name xml:lang="zh-CN">我们的团队</display-name>
+        <online-flag>true</online-flag>
+        <parent>about-us</parent>
+        <position>1.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="customer-service">
+        <display-name xml:lang="x-default">Customer Service</display-name>
+        <display-name xml:lang="fr-FR">Service client</display-name>
+        <display-name xml:lang="it-IT">Servizio clienti</display-name>
+        <display-name xml:lang="ja-JP">カスタマーサービス</display-name>
+        <display-name xml:lang="zh-CN">客户服务</display-name>
+        <online-flag>true</online-flag>
+        <template>rendering/folder/foldercontenthits</template>
+        <parent>root</parent>
+        <position>1.0</position>
+        <page-attributes/>
+        <refinement-definitions>
+            <refinement-definition type="folder" bucket-type="none">
+                <display-name xml:lang="x-default">Customer Service</display-name>
+                <display-name xml:lang="fr-FR">Service client</display-name>
+                <display-name xml:lang="it-IT">Servizio clienti</display-name>
+                <display-name xml:lang="ja-JP">カスタマーサービス</display-name>
+                <display-name xml:lang="zh-CN">客户服务</display-name>
+                <sort-mode>value-count</sort-mode>
+                <sort-direction>descending</sort-direction>
+                <cutoff-threshold>5</cutoff-threshold>
+            </refinement-definition>
+        </refinement-definitions>
+    </folder>
+
+    <folder folder-id="contact-us">
+        <display-name xml:lang="x-default">Contact Us</display-name>
+        <display-name xml:lang="fr-FR">Contactez-nous</display-name>
+        <display-name xml:lang="it-IT">Contattaci</display-name>
+        <display-name xml:lang="ja-JP">お問い合わせ</display-name>
+        <display-name xml:lang="zh-CN">联系我们</display-name>
+        <online-flag>true</online-flag>
+        <parent>customer-service</parent>
+        <position>2.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="testfolder">
+        <display-name xml:lang="x-default">Test Folder</display-name>
+        <display-name xml:lang="fr-FR">Dossier test</display-name>
+        <display-name xml:lang="it-IT">Cartella di test</display-name>
+        <display-name xml:lang="ja-JP">テストフォルダー</display-name>
+        <display-name xml:lang="zh-CN">测试文件夹</display-name>
+        <online-flag>true</online-flag>
+        <parent>contact-us</parent>
+        <position>1.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="my-account-information">
+        <display-name xml:lang="x-default">My Account</display-name>
+        <display-name xml:lang="fr-FR">Mon compte</display-name>
+        <display-name xml:lang="it-IT">Il mio account</display-name>
+        <display-name xml:lang="ja-JP">マイアカウント</display-name>
+        <display-name xml:lang="zh-CN">我的账户</display-name>
+        <online-flag>true</online-flag>
+        <parent>customer-service</parent>
+        <position>8.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="ordering">
+        <display-name xml:lang="x-default">Ordering</display-name>
+        <display-name xml:lang="fr-FR">Commandes</display-name>
+        <display-name xml:lang="it-IT">Gestione ordini</display-name>
+        <display-name xml:lang="ja-JP">注文</display-name>
+        <display-name xml:lang="zh-CN">订购</display-name>
+        <online-flag>true</online-flag>
+        <parent>customer-service</parent>
+        <position>4.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="privacy-security">
+        <display-name xml:lang="x-default">Privacy &amp; Security</display-name>
+        <display-name xml:lang="fr-FR">Confidentialité et sécurité</display-name>
+        <display-name xml:lang="it-IT">Privacy e sicurezza</display-name>
+        <display-name xml:lang="ja-JP">プライバシー &amp; セキュリティ</display-name>
+        <display-name xml:lang="zh-CN">隐私及安全</display-name>
+        <online-flag>true</online-flag>
+        <parent>customer-service</parent>
+        <position>2.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="returns">
+        <display-name xml:lang="x-default">Returns</display-name>
+        <display-name xml:lang="fr-FR">Retours</display-name>
+        <display-name xml:lang="it-IT">Resi</display-name>
+        <display-name xml:lang="ja-JP">返品</display-name>
+        <display-name xml:lang="zh-CN">退货</display-name>
+        <online-flag>true</online-flag>
+        <parent>customer-service</parent>
+        <position>7.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="shippinginfo">
+        <display-name xml:lang="x-default">Shipping</display-name>
+        <display-name xml:lang="fr-FR">Livraison</display-name>
+        <display-name xml:lang="it-IT">Spedizione</display-name>
+        <display-name xml:lang="ja-JP">配送</display-name>
+        <display-name xml:lang="zh-CN">送货</display-name>
+        <online-flag>true</online-flag>
+        <parent>customer-service</parent>
+        <position>5.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="terms">
+        <display-name xml:lang="x-default">Terms &amp; Conditions</display-name>
+        <display-name xml:lang="fr-FR">Conditions générales</display-name>
+        <display-name xml:lang="it-IT">Termini e condizioni</display-name>
+        <display-name xml:lang="ja-JP">利用条件</display-name>
+        <display-name xml:lang="zh-CN">条款与条件</display-name>
+        <online-flag>true</online-flag>
+        <parent>customer-service</parent>
+        <position>9.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="page-includes">
+        <display-name xml:lang="x-default">Content Asset Page Includes</display-name>
+        <display-name xml:lang="fr-FR">La page d'éléments de contenu contient</display-name>
+        <display-name xml:lang="it-IT">La pagina Asset di contenuto include</display-name>
+        <display-name xml:lang="ja-JP">コンテンツアセットページの内容</display-name>
+        <display-name xml:lang="zh-CN">内容素材页面包含</display-name>
+        <description xml:lang="x-default">This folder contains all content assets that are included within the Storefront including home page assets, marketing landing page assets etc.</description>
+        <description xml:lang="fr-FR">Ce dossier contient tous les éléments de contenu qui font partie de la boutique en ligne, notamment les éléments de la page d'accueil, les éléments marketing de la page principale, etc.</description>
+        <description xml:lang="it-IT">Questa cartella contiene tutti gli asset di contenuto inclusi nello storefront, tra questi gli asset della pagina principale, gli asset della pagina di destinazione degli annunci pubblicitari ecc.</description>
+        <description xml:lang="ja-JP">このフォルダーには、ホームページアセット、マーケティングのランディングページアセットなど、ストアフロント内にあるすべてのコンテンツアセットが含まれています。</description>
+        <description xml:lang="zh-CN">此文件夹包括网店中包含的所有内容素材，包括主页素材、营销登录页面素材等。</description>
+        <online-flag>false</online-flag>
+        <parent>root</parent>
+        <position>2.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="buying-guide">
+        <display-name xml:lang="x-default">Buying Guides</display-name>
+        <display-name xml:lang="fr-FR">Guides d'achat</display-name>
+        <display-name xml:lang="it-IT">Guide agli acquisti</display-name>
+        <display-name xml:lang="ja-JP">ご購入案内</display-name>
+        <display-name xml:lang="zh-CN">购物指南</display-name>
+        <online-flag>false</online-flag>
+        <parent>page-includes</parent>
+        <position>16.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="cart-checkout">
+        <display-name xml:lang="x-default">Cart &amp; Checkout</display-name>
+        <display-name xml:lang="fr-FR">Panier et paiement</display-name>
+        <display-name xml:lang="it-IT">Carrello e checkout</display-name>
+        <display-name xml:lang="ja-JP">買い物カゴ &amp; 注文手続き</display-name>
+        <display-name xml:lang="zh-CN">购物车和结算</display-name>
+        <online-flag>false</online-flag>
+        <parent>page-includes</parent>
+        <position>5.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="gift-certificates">
+        <display-name xml:lang="x-default">Gift Certificate Pages</display-name>
+        <display-name xml:lang="fr-FR">Pages Chèque-cadeau</display-name>
+        <display-name xml:lang="it-IT">Pagine per Certificato regalo</display-name>
+        <display-name xml:lang="ja-JP">ギフト券ページ</display-name>
+        <display-name xml:lang="zh-CN">礼券页面</display-name>
+        <online-flag>true</online-flag>
+        <parent>page-includes</parent>
+        <position>14.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="grid-banners">
+        <display-name xml:lang="x-default">Grid Page Banners</display-name>
+        <display-name xml:lang="fr-FR">Bannières de page de grille</display-name>
+        <display-name xml:lang="it-IT">Banner pagina griglia</display-name>
+        <display-name xml:lang="ja-JP">グリッドページのバナー</display-name>
+        <display-name xml:lang="zh-CN">网格页面横幅</display-name>
+        <online-flag>false</online-flag>
+        <parent>page-includes</parent>
+        <position>4.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="home-page">
+        <display-name xml:lang="x-default">Home Page</display-name>
+        <display-name xml:lang="fr-FR">Page d'accueil</display-name>
+        <display-name xml:lang="it-IT">Pagina principale</display-name>
+        <display-name xml:lang="ja-JP">ホームページ</display-name>
+        <display-name xml:lang="zh-CN">首页</display-name>
+        <online-flag>false</online-flag>
+        <parent>page-includes</parent>
+        <position>1.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="marketing-pages">
+        <display-name xml:lang="x-default">Marketing Landing Pages</display-name>
+        <display-name xml:lang="fr-FR">Pages principales marketing</display-name>
+        <display-name xml:lang="it-IT">Pagine di destinazione degli annunci pubblicitari</display-name>
+        <display-name xml:lang="ja-JP">マーケティングのランディングページ</display-name>
+        <display-name xml:lang="zh-CN">营销登录页面</display-name>
+        <online-flag>true</online-flag>
+        <parent>page-includes</parent>
+        <position>13.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="my-account">
+        <display-name xml:lang="x-default">My Account</display-name>
+        <display-name xml:lang="fr-FR">Mon compte</display-name>
+        <display-name xml:lang="it-IT">Il mio account</display-name>
+        <display-name xml:lang="ja-JP">マイアカウント</display-name>
+        <display-name xml:lang="zh-CN">我的账户</display-name>
+        <online-flag>false</online-flag>
+        <parent>page-includes</parent>
+        <position>8.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="size-charts">
+        <display-name xml:lang="x-default">Size Charts</display-name>
+        <display-name xml:lang="fr-FR">Guides des tailles</display-name>
+        <display-name xml:lang="it-IT">Tabelle delle taglie</display-name>
+        <display-name xml:lang="ja-JP">サイズ表</display-name>
+        <display-name xml:lang="zh-CN">尺码表</display-name>
+        <online-flag>false</online-flag>
+        <parent>page-includes</parent>
+        <position>16.0</position>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="top-nav">
+        <display-name xml:lang="x-default">Top Nav</display-name>
+        <display-name xml:lang="fr-FR">Nav. haut</display-name>
+        <display-name xml:lang="it-IT">Navigazione superiore</display-name>
+        <display-name xml:lang="ja-JP">上ナビゲーション</display-name>
+        <display-name xml:lang="zh-CN">热门浏览</display-name>
+        <description xml:lang="x-default">Holds all the articles</description>
+        <description xml:lang="fr-FR">Contient tous les articles</description>
+        <description xml:lang="it-IT">Include tutti gli articoli</description>
+        <description xml:lang="ja-JP">すべての記事を含む</description>
+        <description xml:lang="zh-CN">保存所有商品</description>
+        <online-flag>false</online-flag>
+        <parent>root</parent>
+        <page-attributes/>
+    </folder>
+
+    <content content-id="notifyMeInStock_message_title">
+        <display-name xml:lang="x-default">Notify in stock message title</display-name>
+        <description xml:lang="x-default">Notify in stock message title content</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>true</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">Please, fill your phone number to subscribe for notification</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr-FR">Notifier en stock le titre du message</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it-IT">Notifica nel titolo del messaggio in magazzino</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja-JP">在庫メッセージのタイトルを通知する</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh-CN">在股票消息标题中通知</custom-attribute>
+        </custom-attributes>
+    </content>
+</library>
