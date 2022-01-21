@@ -1,4 +1,4 @@
-# upskill course project
+# Upskill course project
 Notify me when back in stock task
 Description
 1. A button to subscribe for back in stock notification is displayed
