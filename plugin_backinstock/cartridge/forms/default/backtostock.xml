@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19" secure="false">
+	<field 
+		formid="productId" 
+		mandatory="true" 
+		max-length="50" 
+		type="string" />
+
+	<field 
+		formid="phoneNumber" 
+		label="label.input.phoneNumber" 
+		description="notify.example.phoneNumber"
+		mandatory="true"
+		regexp="^([+]?359)|0?(|-| )8[789]\d{1}(|-| )\d{3}(|-| )\d{3}$"
+		missing-error="error.message.phoneNumber.required"
+		parse-error="error.message.parse.phoneNumber"
+		range-error="error.message.range.phoneNumber"
+		type="string" />
+</form>

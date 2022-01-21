@@ -1,0 +1,32 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets');
+        assets.addJs('/js/productDetail.js');//
+        assets.addJs('/js/backtostock.js');
+        assets.addCss('/css/product/detail.css');
+</isscript>
+
+<form action="${pdict.actionUrl}" method="POST" class="backtostock-form" <isprint value="${pdict.backtostockForm.attributes}" encoding="off" />>
+    <div class="notifymeinstock-body">
+        <div class="form-group">
+            <label class="form-control-label">
+                <isprint value="${Resource.msg('label.input.phoneNumber','common',null)}" encoding="htmlcontent" />
+            </label>
+            <input type="tel" class="form-control" id="backtostock-form-phonenumber" placeholder="${Resource.msg('notify.example.phoneNumber','common',null)}" data-missing-error="${Resource.msg('error.message.phoneNumber.required','common',null)}"
+            data-pattern-mismatch="${Resource.msg('error.message.mismatch.phoneNumber','common',null)}"
+            <isprint value="${pdict.backtostockForm.phoneNumber.attributes}" encoding="off" />>
+            <div class="invalid-feedback"></div>
+        </div>
+        <input type="hidden" class="form-control" id="backtostock-form-productId" value="${product.id}" <isprint value="${pdict.backtostockForm.productId.attributes}" encoding="off" />>
+		<input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>	
+    </div>
+    <div class="send-subscription-btn">
+        <button
+            type="submit"
+            id="submitNotifyMeButton"
+            class="btn btn-primary btn-block">
+            ${Resource.msg('button.form.submit','common',null)}
+        </button>
+    </div>
+</form>
+
+

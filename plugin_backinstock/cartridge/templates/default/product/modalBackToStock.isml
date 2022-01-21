@@ -1,0 +1,26 @@
+<iscomment> modal body </iscomment>
+<isscript>
+     var ContentMgr = require('dw/content/ContentMgr');
+     var notifyTitleAsset = ContentMgr.getContent('notifyMeInStock_message_title');
+</isscript>
+<div class="modal fade" id="notifyMeBackToStockModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeBackToStockModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <isif condition="${!empty(notifyTitleAsset) && notifyTitleAsset.isOnline()}">
+                    <h2 class="modal-title notifymeinstock-title">
+                        <isprint value="${notifyTitleAsset.custom.body}" encoding="off" />
+                    </h2>
+                <iselse>
+                     <h2 class="modal-title notifymeinstock-title">${Resource.msg('title.backinstock','common',null)} </h2>
+                </isif>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+                <isinclude template="product/components/notifyMeBTSForm"/>
+            </div>
+        </div>
+    </div>
+</div>
+           
