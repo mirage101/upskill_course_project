@@ -21,17 +21,19 @@ module.exports.execute = function(){
             //check product is in stock
             if(isInStock){
                 //get phone numbers
-                var phoneNumberArr = [];
+                var phoneNumberArr, resultArr = [];
                 if ( notify.custom.phoneNumbers.indexOf(',') > -1) { 
                     phoneNumberArr = notify.custom.phoneNumbers.split(', ')
                 }else{
                     phoneNumberArr = notify.custom.phoneNumbers;
                 }
-                
+                resultArr.push(phoneNumberArr);
                 //If the product is back in stock, make a service call to Twilio API for all phone numbers stored in that custom objects.
-                for(var i=0; i<=phoneNumberArr.length; i++){
-                    twilioService.getTwilioService(customProductName, phoneNumberArr[i]);
+                for(var i=0; i<=resultArr.length; i++){
+                    twilioService.getTwilioService(customProductName, resultArr[i]);
                 }
+
+                
                 //When process finished successfully, delete the custom object.
                 var productObject = CustomObjectMgr.getCustomObject(type, keyValue);
                 Transaction.wrap(function(){
