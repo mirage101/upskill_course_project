@@ -32,7 +32,6 @@ server.post('Subscribe', server.middleware.https, function (req, res, next) {
     var receivedMsgBody = Resource.msg('msg.notifymeinstock', 'common', null);    
     var backtostockForm = server.forms.getForm('backtostock');
 	var CustomObjectMgr = require('dw/object/CustomObjectMgr');
-    var returnUrl = URLUtils.url('Product-Show').toString();
     var arrNumbers = [];
     //custom object name
     var type = 'NotifyMeBackInStok';    
@@ -75,8 +74,7 @@ server.post('Subscribe', server.middleware.https, function (req, res, next) {
                         res.json({
                             success: true,
                             receivedMsgHeading: receivedMsgHeading,
-                            receivedMsgBody: receivedMsgBody,
-                            returnUrl: returnUrl
+                            receivedMsgBody: receivedMsgBody
                         });
                     }else{
                         var CustomObject = CustomObjectMgr.createCustomObject(type, backtostockForm.productId.value);
@@ -88,8 +86,7 @@ server.post('Subscribe', server.middleware.https, function (req, res, next) {
                             res.json({
                                 success: true,
                                 receivedMsgHeading: receivedMsgHeading,
-                                receivedMsgBody: receivedMsgBody,
-                                returnUrl: returnUrl
+                                receivedMsgBody: receivedMsgBody
                             });                   
                     }               
                     
